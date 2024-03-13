@@ -24,14 +24,22 @@
     />
   </head>
   <body>
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-lable="Close menu"
+      role="button"
+    />
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
       <div class="main-content menu-content">
-        <h1>
+        <h1 onclick="getElementById('close-menu').checked = false">
           <a href="#home">LOGO</a>
         </h1>
 
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false">
             <li><a href="#intro">Intro</a></li>
             <li><a href="#grid-one">Top 3</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -42,7 +50,7 @@
       </div>
     </aside>
 
-    <div class="menu-spacing"></div>
+    <div class="menu-spacing main-bg"></div>
 
     <section id="home" class="main-bg section">
       <div class="main-content intro-content">
@@ -171,7 +179,7 @@
     </section>
 
     <section id="pricing" class="white-bg section">
-      <div class="main-content intro">
+      <div class="main-content intro padding-fix">
         <h2>Pricing</h2>
         <p>
           The release of Apple Silicon-bases Macs at the end of last year
@@ -310,5 +318,7 @@
         >
       </p>
     </footer>
+
+    <a class="back-to-top" href="#">➤</a>
   </body>
 </html>
