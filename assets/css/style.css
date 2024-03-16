@@ -19,10 +19,6 @@
   height: auto;
 }
 
-.intro h2 {
-  word-wrap: break-word;
-}
-
 .intro {
   display: flex;
   flex-flow: column nowrap;
@@ -191,6 +187,12 @@
 }
 
 @media (max-width: 800px){
+
+  .intro h2 {
+    width: inherit;
+    font-size: 320%;
+    overflow: hidden;
+  }
 
   .intro-content, .grid {
     grid-template-columns: 1fr;
