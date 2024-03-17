@@ -68,10 +68,6 @@
   transform: rotate(2deg);
 }
 
-.padding-fix {
-  padding-top: 8rem;
-}
-
 .gallery-img {
   width: 100%;
   max-width: 36rem;
@@ -186,12 +182,24 @@
   border: 0.1rem solid var(--primary-color)
 }
 
-@media (max-width: 800px){
+@media (max-width: 700px){
 
-  .intro h2 {
-    width: inherit;
-    font-size: 320%;
-    overflow: hidden;
+  h2 {
+    font-size: 10vw;
+  }
+
+  .main-content {
+    width: 100vw;
+    padding-top: var(--gap);
+    height: auto;
+  }
+
+  .intro-content {
+    padding-top: - var(--gap);
+  }
+
+  .main-content.intro {
+    padding-top: 8rem;
   }
 
   .intro-content, .grid {
