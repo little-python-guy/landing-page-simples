@@ -188,13 +188,17 @@
     font-size: 10vw;
   }
 
+  #contact {
+    padding-top: var(--gap);
+  }
+
   .main-content {
     width: 100vw;
     padding-top: var(--gap);
     height: auto;
   }
 
-  .intro-content {
+  .main-content.intro-content {
     padding-top: - var(--gap);
   }
 
